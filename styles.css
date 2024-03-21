@@ -7,3 +7,7 @@
   body {
     background-color: var(--primary-color);
   }
+
+  .main--navbar {
+    display: flex;
+  }
