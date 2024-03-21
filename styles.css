@@ -2,12 +2,4 @@
     --primary-color: #DCE0E9; /* light blue */
     --secondary-color: #3A5365; /* dark blue */
     --accent-color: #CF9521; /* gold */
-  }
-
-  body {
-    background-color: var(--primary-color);
-  }
-
-  .main--navbar {
-    display: flex;
-  }
+}
