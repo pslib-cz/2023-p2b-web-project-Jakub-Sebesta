@@ -4,29 +4,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
-        <title>Index</title>
+        <title>Sklaní Koruna</title>
     </head>
     <body>
         <header>
-            <nav id="main--navbar">
-                <div>
-                    <picture>
-                        <img src="./Icons/Erb.svg" alt="Erb">
-                    </picture>
-                </div>
+            <nav class="header__navbar">
+                <picture>
+                    <img src="./Icons/Erb.svg" alt="Erb">
+                </picture>
                 <menu id = "main--navbar">
                     <li>Domů</li>
                     <li>O Hradu</li>
                     <li>Galerie</li>
                     <li>Kontaktujte nás</li>
-                    <li id="Mobile--Main_Title"><h1>Skalní Koruna</h1></li>
+                    <li id="Mobile--Main_Title"><h1>Skalní Koruna</h1></li>  <!--jak jinak to nechat zmizet?-->>
                 </menu>
             </nav>
-            <picture id="Main_Picture">
+            <picture id="Header_Picture">
                 <img src="./Images/Main_Image.jpg" alt="hrad Skalní Koruna">
             </picture>
             <nav>
-                <memu id="secondary--navbar">
+                <memu id="secondary--menu">
                     <li>
                         <img src="./Icons/Action_icon.svg" alt="Ikona akcí">
                         <p>Akce</p>
@@ -48,19 +46,19 @@
                         <p>Historie</p>
                     </li>
                     <li>
-                        <img src="./Icons/More info icon.svg">
+                        <img src="./Icons/More info icon.svg" alt="Ikona informace">
                         <p>Další informace</p>
                     </li>
                 </memu>
             </nav>
         </header>
-        <section id="main--text--section">
-            <img src="./Images/Knight_standing.svg" alt="Rytíř">
-            <article>
-                <header>
-                    <h2>Symbol krásy a historie</h2>
-                </header>
-                <body>
+        <main>
+            <section id="main__text__section">
+                <img src="./Images/Knight_standing.svg" alt="Rytíř">
+                <article>
+                    <header>
+                        <h2>Symbol krásy a historie</h2>
+                    </header>
                     <p>
                         Hrad s výhledem do malebného údolí, se pyšní bohatou historií, jejíž kořeny sahají hluboko do středověku.
                         Byl postaven jako sídlo moudrých králů, kteří hledali klid a ochranu ve stínu svých mohutných hradeb.
@@ -77,14 +75,12 @@
                         objevte tajemství, která na vás čekají. Vítáme vás s otevřenými náručími ve Skalní Koruně - 
                         království legend a dobrodružství!
                     </p>
-                </body>
-            </article>
-        </section>
-        <section id="destination--ideas">
-            <header>
-                <h2>Tipy na výlet</h2>
-            </header>
-            <body>
+                </article>
+            </section>
+            <section id="destination__ideas">
+                <header>
+                    <h2>Tipy na výlet</h2>
+                </header>
                 <div>
                     <img src="./Images/City destination.svg" alt="Město">
                     <h3>Stříbrný štít</h3>
@@ -101,38 +97,38 @@
                     <img src="./Images/Confectionery.svg" alt="Cukrárna">
                     <h3>Cukrárna u Šollise</h3>
                 </div>
-            </body>
-        </section>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <header>
+                    <h3>Kde nás najdete</h3>
+                </header>
+                <img src="./Images/Location.svg" alt="Mapa">
+            </div>
+            <div>
+                <header>
+                    <h3>Kontakty</h3>
+                </header>
+                <p>
+                    Imaginární hrad Skalní Koruna
+                    Královská cesta 1
+                    420 69 Stříbrný Štít
+                    +134 617 102 418
+                    skalnikoruna@hrady.md
+                </p>
+            </div>
+            <div>
+                <header>
+                    <h3>Mohlo by vás zajímat</h3>
+                </header>
+                <p>
+                    Fotografie
+                    Rytířské turnaje
+                    Firemní akce
+                    Hillova šifra
+                </p>
+            </div>
+        </footer>
     </body>
-    <footer>
-        <div>
-            <header>
-                <h3>Kde nás najdete</h3>
-            </header>
-            <img src="./Images/Location.svg" alt="Mapa">
-        </div>
-        <div>
-            <header>
-                <h3>Kontakty</h3>
-            </header>
-            <p>
-                Imaginární hrad Skalní Koruna
-                Královská cesta 1
-                420 69 Stříbrný Štít
-                +134 617 102 418
-                skalnikoruna@hrady.md
-            </p>
-        </div>
-        <div>
-            <header>
-                <h3>Mohlo by vás zajímat</h3>
-            </header>
-            <p>
-                Fotografie
-                Rytířské turnaje
-                Firemní akce
-                Hillova šifra
-            </p>
-        </div>
-    </footer>
 </html>
