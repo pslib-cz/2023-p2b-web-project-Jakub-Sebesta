@@ -3,3 +3,7 @@
     --secondary-color: #3A5365; /* dark blue */
     --accent-color: #CF9521; /* gold */
 }
+
+.html {
+    background-color: var(--primary-color);
+}
