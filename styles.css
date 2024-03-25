@@ -7,3 +7,27 @@
 .html {
     background-color: var(--primary-color);
 }
+
+
+
+.header__navbar {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.header__navbar__item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-shrink: 1;
+    flex-shrink: 0;
+}
+
+#header__picture {
+    width: 100%;
+}
