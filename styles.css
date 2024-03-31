@@ -9,15 +9,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: var(--light-blue);   /* obavení celé stránky*/
+    background-color: var(--light-blue); 
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
+    font-weight: 100;
 }
 
 *, *::before, *::after {  /*likvidace rámečků kolem stránky*/
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 4vw;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.8em;
+    font-style: normal;
 }
 
 
@@ -32,7 +51,7 @@ body {
     align-items: center;
 }
 
-.header__navbar__item {  /*romístění jednotlivých možností v navbaru*/
+.header__navbar__item {  /*rozmístění jednotlivých možností v navbaru*/
     margin-left: 1rem;
     margin-right: 1rem;
     flex-shrink: 1;
@@ -83,6 +102,7 @@ header {
     display: flex;
     align-items: center;
     padding: 1em;
+    margin-bottom: 2vw;
 }
 
 
@@ -90,8 +110,45 @@ header {
     font-size: 2vw;
 }
 
+
 #knight-responsive {
     display: none;
+}
+
+.destination__ideas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.destination__image {  /*poradit se sw někym*/
+
+}
+
+footer {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 17vw;
+    color: var(--light-gold);
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+footer div header {
+    margin-bottom: 2vw;
+}
+
+footer div > *:not(header) {
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+footer div ul {
+    list-style: none;
 }
 
 @media screen and (min-width: 500px) { /* pc vezre stránky*/
