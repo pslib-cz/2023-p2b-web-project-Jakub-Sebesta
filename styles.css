@@ -62,6 +62,7 @@ nav {
     flex-shrink: 0;
 }
 
+
 #header__picture {  /*hlavní fotka hradu*/
     width: 100%;
 }
@@ -117,7 +118,7 @@ nav {
 
 .main__text article p {
     font-size: 3vw;
-    padding: 1%;
+    padding: 1em;
 }
 
 #knight-responsive {
