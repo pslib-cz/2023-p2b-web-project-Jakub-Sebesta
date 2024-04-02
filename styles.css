@@ -12,6 +12,7 @@ body {
     background-color: var(--light-blue); 
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
+    min-width: 400px;
 }
 
 *, *::before, *::after {  /*likvidace rámečků kolem stránky*/
@@ -22,7 +23,7 @@ body {
 
 h2 {
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 1.8em;
     text-align: center;
 }
 
@@ -36,9 +37,12 @@ h4 {
     font-weight: 200;
     text-align: center;
     font-size: 1.8em;
-    font-style: normal;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
 
 .header__navbar, .header__navbar__items {  /* barva a rozmístění v navbaru*/
     background-color: var(--dark-blue);
@@ -62,35 +66,42 @@ h4 {
     width: 100%;
 }
 
-header {
-    position: relative;
-}
-
 .grid-menu {  /*rozmístění položek quick access menu*/
     display: grid;
     grid-template-columns: repeat(3,1fr);
     list-style: none;
     width: 80%;
     gap: 1em;
-    position: absolute;
-    top: 85%;
-    left: 10%;
     justify-items: center;
     align-items: center;
-    padding: .5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 
 .grid-menu li {
     background-color: var(--light-gray);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-    width: 90px;
-    height: 80px;
-    display: grid;
+    min-width: 95px;
+    min-height: 80px;
+    width: 11vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-menu li img {
+    padding-top: 5px;
+    display: block;
+    width: 75%;
+    height: 75%;
 }
 
 .grid-menu li p {  /* zarovnání textu v poli*/
     text-align: center;
+    font-size: .8em;
 }
 
 .header__navbar__items {  /*srytí prvků navbaru v mobilní verzi*/
@@ -101,15 +112,13 @@ header {
     background-color: var(--light-gold);
     display: flex;
     align-items: center;
-    padding: 1em;
     margin-bottom: 2vw;
 }
 
-
 .main__text article p {
-    font-size: 2vw;
+    font-size: 3vw;
+    padding: 1%;
 }
-
 
 #knight-responsive {
     display: none;
@@ -160,12 +169,24 @@ footer div ul {
 @media screen and (min-width: 800px) {
     .grid-menu {
         grid-template-columns: repeat(6,1fr);
-        position: absolute;
-        top: 95%;
+    }
+
+    .main__text article p {
+        font-size: 1.5vw;
     }
 
     #knight-responsive {
+        width: 20vw;
         display: block;
-        height: 80%;
+        align-self: flex-end;
     }
+
+    .grid-menu li p {
+        font-size: min(1.3vw, 40px);
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
 }
