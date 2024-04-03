@@ -7,12 +7,19 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 
 body {
     background-color: var(--light-blue); 
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
     min-width: 400px;
+}
+
+*, *::before, *::after {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -33,6 +40,11 @@ h4 {
     font-size: 1.8em;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -50,6 +62,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Marcellus SC", serif;
+    font-size: 1.2em;
 }
 
 .header__navbar__item {  /*rozmístění jednotlivých možností v navbaru*/
@@ -128,7 +142,7 @@ nav {
 .destination__ideas {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
     flex-shrink: 0;
     margin-top: 2vw;
     margin-bottom: 2vw;
