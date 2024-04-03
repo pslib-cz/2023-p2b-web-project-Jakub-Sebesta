@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./normalize.css">
         <link rel="stylesheet" href="./styles.css">
+        <script src="./hamburger.js"></script>
         <title>Sklaní Koruna</title>
     </head>
     <body>
         <header>
             <nav class="header__navbar">
                 <picture>
-                    <img class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb">
+                    <img onclick="hamburger_menu()" class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb">
                 </picture>
                 <menu class="header__navbar__items">
                     <li class="header__navbar__item">Domů</li>
