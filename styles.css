@@ -144,7 +144,7 @@ nav {
     padding: 1em;
 }
 
-#knight-responsive {
+.knight-responsive {
     display: none;
 }
 
@@ -198,7 +198,7 @@ footer div ul {
         font-size: 1.5vw;
     }
 
-    #knight-responsive {
+    .knight-responsive {
         width: 20vw;
         display: block;
         align-self: flex-end;
@@ -255,4 +255,35 @@ footer div ul {
     padding: 1vw;
     margin-top: .6em;
     margin-bottom: 2em;
+}
+
+/* styly pro kontakní formulář */
+
+.contact__form--container {
+    display: flex;
+    padding: 2em;
+}
+
+.contact__form {
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.contact__form--container div {
+}
+
+.contact__form div {
+    display: flex;
+}
+
+.contact__form div > * {
+    background-color: var(--light-blue);
+    border: none;
+    border-bottom: 1.5px solid black;
+}
+
+.contact__form > * {
+    background-color: var(--light-blue);
+    border: none;
+    width: 100%;
 }

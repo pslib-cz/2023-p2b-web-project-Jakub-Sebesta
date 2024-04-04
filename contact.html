@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
+    />
+    <script src="./hamburger.js"></script>
+    <title>Galerie</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header__navbar">
+        <div class="header__navbar__icons">
+          <picture>
+            <img
+              onclick="hamburger_menu()"
+              class="header__navbar__item"
+              src="./Icons/Erb.svg"
+              alt="Erb"
+            />
+          </picture>
+          <h1>Skalní Koruna</h1>
+        </div>
+        <menu class="header__navbar__items">
+          <li class="header__navbar__item"><a href="./index.html">Domů</a></li>
+          <li class="header__navbar__item">O Hradu</li>
+          <li class="header__navbar__item">
+            <a href="./gallery.html">Galerie</a>
+          </li>
+          <li class="header__navbar__item">
+            <a href="./contact.html">Kontaktujte nás</a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <div class="contact__form--container">
+        <img class="knight-responsive" src="./Images/Contact-knight.svg" alt="Kontaktovací rytíř">
+        <div class="contact__form">
+          <input type="text" placeholder="Vaše jméno" required>
+          <div>
+            <input type="email" placeholder="Váš e-mail" required>
+            <input type="tel" placeholder="Vaše telefonní číslo (nepovinné)">
+          </div>
+          <textarea placeholder="Zpráva pro nás" required></textarea>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <header>
+          <h3>Kde nás najdete</h3>
+        </header>
+        <img src="./Images/Location.svg" alt="Mapa" />
+      </div>
+      <div>
+        <header>
+          <h3>Kontakty</h3>
+        </header>
+        <ul>
+          <li>Imaginární hrad Skalní Koruna</li>
+          <li>Královská cesta 1</li>
+          <li>420 69 Stříbrný Štít</li>
+          <li>+134 617 102 418</li>
+          <li>skalnikoruna@hrady.md</li>
+        </ul>
+      </div>
+      <div>
+        <header>
+          <h3>Mohlo by vás zajímat</h3>
+        </header>
+        <ul>
+          <li>Fotografie</li>
+          <li>Rytířské turnaje</li>
+          <li>Firemní akce</li>
+          <li>Hillova šifra</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

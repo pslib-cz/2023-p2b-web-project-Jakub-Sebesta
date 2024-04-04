@@ -1,142 +1,154 @@
 <!DOCTYPE html>
 <html lang="cz">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./normalize.css">
-        <link rel="stylesheet" href="./styles.css">
-        <script src="./hamburger.js"></script>
-        <title>Sklaní Koruna</title>
-    </head>
-    <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./hamburger.js"></script>
+  <title>Sklaní Koruna</title>
+</head>
+
+<body>
+  <header>
+    <nav class="header__navbar">
+      <div class="header__navbar__icons">
+        <picture>
+          <img onclick="hamburger_menu()" class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb" />
+        </picture>
+        <h1>Skalní Koruna</h1>
+      </div>
+      <menu class="header__navbar__items">
+        <li class="header__navbar__item">Domů</li>
+        <li class="header__navbar__item">O Hradu</li>
+        <li class="header__navbar__item">
+          <a href="./gallery.html">Galerie</a>
+        </li>
+        <li class="header__navbar__item">
+          <a href="./contact.html">Kontaktujte nás</a>
+        </li>
+      </menu>
+    </nav>
+    <picture>
+      <img id="header__picture" src="./Images/Main_Image.jpg" alt="hrad Skalní Koruna" />
+    </picture>
+    <nav>
+      <menu class="grid-menu">
+        <li>
+          <img src="./Icons/Action_icon.svg" alt="Ikona akcí" />
+          <p>Akce</p>
+        </li>
+        <li>
+          <img src="./Icons/Watch_icon.svg" alt="Ikona hodin" />
+          <p>Návštěvní doba</p>
+        </li>
+        <li>
+          <img src="./Icons/Tictet icon.svg" alt="Ikona lístku" />
+          <p>Vstupenky</p>
+        </li>
+        <li>
+          <img src="./Icons/Map Icon.svg" alt="Ikona mapy" />
+          <p>Mapa areálu</p>
+        </li>
+        <li>
+          <img src="./Icons/Crown icon.svg" alt="Ikona koruny" />
+          <p>Historie</p>
+        </li>
+        <li>
+          <img src="./Icons/More info icon.svg" alt="Ikona informace" />
+          <p>Další informace</p>
+        </li>
+      </menu>
+    </nav>
+  </header>
+  <main>
+    <section class="main__text">
+      <img class="knight-responsive" src="./Images/Knight_standing.svg" alt="Rytíř" />
+      <article>
         <header>
-            <nav class="header__navbar">
-                <div class="header__navbar__icons">
-                    <picture>
-                        <img onclick="hamburger_menu()" class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb">
-                    </picture>
-                    <h1>Skalní Koruna</h1>
-                </div>
-                <menu class="header__navbar__items">
-                    <li class="header__navbar__item">Domů</li>
-                    <li class="header__navbar__item">O Hradu</li>
-                    <li class="header__navbar__item"> <a href="./gallery.html">Galerie</a></li>
-                    <li class="header__navbar__item">Kontaktujte nás</li>
-                </menu>
-            </nav>
-            <picture>
-                <img id="header__picture" src="./Images/Main_Image.jpg" alt="hrad Skalní Koruna">
-            </picture>
-            <nav>
-                <menu class="grid-menu">
-                    <li>
-                        <img src="./Icons/Action_icon.svg" alt="Ikona akcí">
-                        <p>Akce</p>
-                    </li>
-                    <li>
-                        <img src="./Icons/Watch_icon.svg" alt="Ikona hodin">
-                        <p>Návštěvní doba</p>
-                    </li>
-                    <li>
-                        <img src="./Icons/Tictet icon.svg" alt="Ikona lístku">
-                        <p>Vstupenky</p>
-                    </li>
-                    <li>
-                        <img src="./Icons/Map Icon.svg" alt="Ikona mapy">
-                        <p>Mapa areálu</p>
-                    </li>
-                    <li>
-                        <img src="./Icons/Crown icon.svg" alt="Ikona koruny">
-                        <p>Historie</p>
-                    </li>
-                    <li>
-                        <img src="./Icons/More info icon.svg" alt="Ikona informace">
-                        <p>Další informace</p>
-                    </li>
-                </menu>
-            </nav>
+          <h2>Symbol krásy a historie</h2>
         </header>
-        <main>
-            <section class="main__text">
-                <img id="knight-responsive" src="./Images/Knight_standing.svg" alt="Rytíř">
-                <article>
-                    <header>
-                        <h2>Symbol krásy a historie</h2>
-                    </header>
-                    <p>
-                        Hrad s výhledem do malebného údolí, se pyšní bohatou historií, jejíž kořeny sahají hluboko do středověku.
-                        Byl postaven jako sídlo moudrých králů, kteří hledali klid a ochranu ve stínu svých mohutných hradeb.
-                        Dnes zde tato historie ožívá a láká návštěvníky k objevování tajemství minulosti.
-                        V temných lesích pod hradem se tyčí tajemný portál, který legendy přisuzují magickým silám.
-                        Zbývající ruiny tohoto portálu jsou pozůstatkem dávných dob, kdy se v těchto místech věřilo
-                        na prastaré kouzla a výjimečné síly.
-                        Každoročně ve Skalní Koruně hostíme vzrušující události, které oživují atmosféru minulosti.
-                        Přijďte se zúčastnit rytířských turnajů, soutěží a historických představení,
-                        které vám přiblíží dobu dávných rytířů a válečných hrdinů.
-                        Pro ty, kteří touží prožít autentický středověký zážitek, nabízíme ubytování v pohostinných komnatách hradu.
-                        Nechte se unést atmosférou minulosti a vychutnejte si tradiční středověká jídla servírovaná v našich královských sálech.
-                        Přijďte a prožijte nezapomenutelné dobrodružství ve Skalní Koruně. Staňte se součástí naší bohaté historie a
-                        objevte tajemství, která na vás čekají. Vítáme vás s otevřenými náručími ve Skalní Koruně - 
-                        království legend a dobrodružství!
-                    </p>
-                </article>
-            </section>
-            <section class="aditional__info">
-                <header>
-                    <h2>Tipy na výlet</h2>
-                </header>
-                <div class="destination__ideas">
-                    <div>
-                        <img class="destination__image" src="./Images/City destination.svg" alt="Město">
-                        <h3 class="destination__name">Stříbrný štít</h3>
-                    </div>
-                    <div>
-                        <img class="destination__image" src="./Images/Stone gold.svg" alt="Kamenný lom">
-                        <h3 class="destination__name" >Matné zlato</h3>
-                    </div>
-                    <div>
-                        <img class="destination__image" src="./Images/Old portal.svg" alt="Starý portál">
-                        <h3 class="destination__name" >Ztracená brána</h3>
-                    </div>
-                    <div>
-                        <a href="https://pslib-cz.github.io/2023-p2b-web-project-MarekSollar/index.html">
-                            <img class="destination__image" src="./Images/Confectionery.svg" alt="Cukrárna">
-                            <h3 class="destination__name" >Cukrárna u Šollise</h3>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <header>
-                    <h3>Kde nás najdete</h3>
-                </header>
-                <img src="./Images/Location.svg" alt="Mapa">
-            </div>
-            <div>
-                <header>
-                    <h3>Kontakty</h3>
-                </header>
-                <ul>
-                    <li>Imaginární hrad Skalní Koruna</li>
-                    <li>Královská cesta 1</li>
-                    <li>420 69 Stříbrný Štít</li>
-                    <li>+134 617 102 418</li>
-                    <li>skalnikoruna@hrady.md</li>
-                </ul>
-            </div>
-            <div>
-                <header>
-                    <h3>Mohlo by vás zajímat</h3>
-                </header>
-                <ul>
-                    <li>Fotografie</li>
-                    <li>Rytířské turnaje</li>
-                    <li>Firemní akce</li>
-                    <li>Hillova šifra</li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+        <p>
+          Hrad s výhledem do malebného údolí, se pyšní bohatou historií, jejíž
+          kořeny sahají hluboko do středověku. Byl postaven jako sídlo
+          moudrých králů, kteří hledali klid a ochranu ve stínu svých
+          mohutných hradeb. Dnes zde tato historie ožívá a láká návštěvníky k
+          objevování tajemství minulosti. V temných lesích pod hradem se tyčí
+          tajemný portál, který legendy přisuzují magickým silám. Zbývající
+          ruiny tohoto portálu jsou pozůstatkem dávných dob, kdy se v těchto
+          místech věřilo na prastaré kouzla a výjimečné síly. Každoročně ve
+          Skalní Koruně hostíme vzrušující události, které oživují atmosféru
+          minulosti. Přijďte se zúčastnit rytířských turnajů, soutěží a
+          historických představení, které vám přiblíží dobu dávných rytířů a
+          válečných hrdinů. Pro ty, kteří touží prožít autentický středověký
+          zážitek, nabízíme ubytování v pohostinných komnatách hradu. Nechte
+          se unést atmosférou minulosti a vychutnejte si tradiční středověká
+          jídla servírovaná v našich královských sálech. Přijďte a prožijte
+          nezapomenutelné dobrodružství ve Skalní Koruně. Staňte se součástí
+          naší bohaté historie a objevte tajemství, která na vás čekají.
+          Vítáme vás s otevřenými náručími ve Skalní Koruně - království
+          legend a dobrodružství!
+        </p>
+      </article>
+    </section>
+    <section class="aditional__info">
+      <header>
+        <h2>Tipy na výlet</h2>
+      </header>
+      <div class="destination__ideas">
+        <div>
+          <img class="destination__image" src="./Images/City destination.svg" alt="Město" />
+          <h3 class="destination__name">Stříbrný štít</h3>
+        </div>
+        <div>
+          <img class="destination__image" src="./Images/Stone gold.svg" alt="Kamenný lom" />
+          <h3 class="destination__name">Matné zlato</h3>
+        </div>
+        <div>
+          <img class="destination__image" src="./Images/Old portal.svg" alt="Starý portál" />
+          <h3 class="destination__name">Ztracená brána</h3>
+        </div>
+        <div>
+          <a href="https://pslib-cz.github.io/2023-p2b-web-project-MarekSollar/index.html">
+            <img class="destination__image" src="./Images/Confectionery.svg" alt="Cukrárna" />
+            <h3 class="destination__name">Cukrárna u Šollise</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <header>
+        <h3>Kde nás najdete</h3>
+      </header>
+      <img src="./Images/Location.svg" alt="Mapa" />
+    </div>
+    <div>
+      <header>
+        <h3>Kontakty</h3>
+      </header>
+      <ul>
+        <li>Imaginární hrad Skalní Koruna</li>
+        <li>Královská cesta 1</li>
+        <li>420 69 Stříbrný Štít</li>
+        <li>+134 617 102 418</li>
+        <li>skalnikoruna@hrady.md</li>
+      </ul>
+    </div>
+    <div>
+      <header>
+        <h3>Mohlo by vás zajímat</h3>
+      </header>
+      <ul>
+        <li>Fotografie</li>
+        <li>Rytířské turnaje</li>
+        <li>Firemní akce</li>
+        <li>Hillova šifra</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
