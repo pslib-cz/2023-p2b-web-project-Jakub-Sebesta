@@ -234,5 +234,25 @@ footer div ul {
     margin: 1em;
 }
 
+/* styly pro galerii*/
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: .5rem;
+    padding: 2vw;
+    padding-top: 1em;
+}
 
+.gallery__item {
+    display: block;
+    width: 100%;
+}
+
+.contactus-text {
+    background-color: var(--light-gold);
+    text-align: center;
+    padding: 1vw;
+    margin-top: .6em;
+    margin-bottom: 2em;
+}

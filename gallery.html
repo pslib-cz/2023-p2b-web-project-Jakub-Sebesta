@@ -9,16 +9,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
     />
-
+    <script src="./hamburger.js"></script>
     <title>Galerie</title>
   </head>
 
   <body>
     <header>
       <nav class="header__navbar">
-        <picture>
-          <img class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb" />
-        </picture>
+        <div class="header__navbar__icons">
+          <picture>
+            <img
+              onclick="hamburger_menu()"
+              class="header__navbar__item"
+              src="./Icons/Erb.svg"
+              alt="Erb"
+            />
+          </picture>
+          <h1>Skalní Koruna</h1>
+        </div>
         <menu class="header__navbar__items">
           <li class="header__navbar__item"><a href="./index.html">Domů</a></li>
           <li class="header__navbar__item">O Hradu</li>
@@ -99,6 +107,12 @@
           />
         </a>
       </div>
+      <section class="contactus-text">
+        <p>
+          Navšívily jste náš hrad a máte nějaké fotografie, které byste s námi
+          chtěli sdtílet? Neváhejte nás kontaktovat.
+        </p>
+      </section>
     </main>
     <footer>
       <div>
