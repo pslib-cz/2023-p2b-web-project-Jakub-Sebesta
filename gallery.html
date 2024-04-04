@@ -1,60 +1,150 @@
 <!DOCTYPE html>
 <html lang="cz">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./gallery.css">
-        <title>Galerie</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
+    />
+
+    <title>Galerie</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="header__navbar">
+        <picture>
+          <img class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb" />
+        </picture>
+        <menu class="header__navbar__items">
+          <li class="header__navbar__item"><a href="./index.html">Domů</a></li>
+          <li class="header__navbar__item">O Hradu</li>
+          <li class="header__navbar__item">Galerie</li>
+          <li class="header__navbar__item">Kontaktujte nás</li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <div class="gallery" id="lightgallery">
+        <a src="./Images/Gallery-images/Castle1.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Hrad1l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Castle2.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Hrad2l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Castle3.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Hrad3l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Interior4.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Interior4l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Interior5.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Interier5l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Interior6.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Interier6l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Knight_fight7.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Knight fight7l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Knight_fight8.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Knight fight8.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Knight_on_horseback9.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Knight on horseback9l.webp"
+          />
+        </a>
+
+        <a src="./Images/Gallery-images/Knight_on_horseback10.webp">
+          <img
+            class="gallery__item"
+            src="./Images/Gallery-images/Low-Res/Knight on horseback10l.webp"
+          />
+        </a>
+      </div>
+    </main>
+    <footer>
+      <div>
         <header>
-            <nav class="header__navbar">
-                <picture>
-                    <img class="header__navbar__item" src="./Icons/Erb.svg" alt="Erb">
-                </picture>
-                <menu class="header__navbar__items">
-                    <li class="header__navbar__item"><a href="./index.html">Domů</a></li>
-                    <li class="header__navbar__item">O Hradu</li>
-                    <li class="header__navbar__item">Galerie</li>
-                    <li class="header__navbar__item">Kontaktujte nás</li>
-                </menu>
-            </nav>
+          <h3>Kde nás najdete</h3>
         </header>
-        <main>
-            <picture>
-                <img src="./Images/Gallery-images/Knight_on_horseback-1.jpg" alt="Rytíř na koni">
-            </picture>
-        </main>
-        <footer>
-            <div>
-                <header>
-                    <h3>Kde nás najdete</h3>
-                </header>
-                <img src="./Images/Location.svg" alt="Mapa">
-            </div>
-            <div>
-                <header>
-                    <h3>Kontakty</h3>
-                </header>
-                <ul>
-                    <li>Imaginární hrad Skalní Koruna</li>
-                    <li>Královská cesta 1</li>
-                    <li>420 69 Stříbrný Štít</li>
-                    <li>+134 617 102 418</li>
-                    <li>skalnikoruna@hrady.md</li>
-                </ul>
-            </div>
-            <div>
-                <header>
-                    <h3>Mohlo by vás zajímat</h3>
-                </header>
-                <ul>
-                    <li>Fotografie</li>
-                    <li>Rytířské turnaje</li>
-                    <li>Firemní akce</li>
-                    <li>Hillova šifra</li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+        <img src="./Images/Location.svg" alt="Mapa" />
+      </div>
+      <div>
+        <header>
+          <h3>Kontakty</h3>
+        </header>
+        <ul>
+          <li>Imaginární hrad Skalní Koruna</li>
+          <li>Královská cesta 1</li>
+          <li>420 69 Stříbrný Štít</li>
+          <li>+134 617 102 418</li>
+          <li>skalnikoruna@hrady.md</li>
+        </ul>
+      </div>
+      <div>
+        <header>
+          <h3>Mohlo by vás zajímat</h3>
+        </header>
+        <ul>
+          <li>Fotografie</li>
+          <li>Rytířské turnaje</li>
+          <li>Firemní akce</li>
+          <li>Hillova šifra</li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module">
+      import lightgallery from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm";
+      import lgThumbnail from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm";
+      import lgZoom from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm";
+      import lgAutoplay from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm";
+
+      lightgallery(document.querySelector(".gallery"), {
+        selector: document.querySelectorAll(".gallery a"),
+        plugins: [lgThumbnail, lgZoom, lgAutoplay],
+        slideShowAutoplay: false,
+        slideShowInterval: 2000,
+        subHtmlSelectorRelative: false,
+        allowMediaOverlap: false,
+      });
+    </script>
+  </body>
 </html>
