@@ -41,7 +41,7 @@ h3 {
 h4 {
     font-weight: 200;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 4vw;
 }
 
 a {
@@ -164,19 +164,21 @@ nav {
 
 footer {
     background-color: var(--dark-blue);
-    color: var(--light-gold);
+    color: var(--light-gray);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-content: flex-start;
+
 }
 
 footer div {
     padding: 1em;
-    width: fit-content;
+    display: block;
 }
 
 footer div header {
+    color: var(--light-gold);
     margin-bottom: 2vw;
 }
 
@@ -184,39 +186,12 @@ footer div ul {
     list-style: none;
 }
 
-
-@media screen and (min-width: 800px) {
-    .header__navbar__items {
-        display: flex;
-    }
-
-    .grid-menu {
-        grid-template-columns: repeat(6,1fr);
-    }
-
-    .main__text article p {
-        font-size: 1.5vw;
-    }
-
-    .knight-responsive {
-        width: 20vw;
-        display: block;
-        align-self: flex-end;
-    }
-
-    .grid-menu li p {
-        font-size: min(1.3vw, 40px);
-    }
-
-    h2 {
-        font-size: 2.5vw;
-    }
-
-    .destination__ideas{
-        justify-content: center;
-    }
-
+footer div ul li {
+    font-size: 3vw;
 }
+
+/*styly pro hamburger menu*/
+
 .hamburger--show {
     display: flex;
     flex-direction: column;
@@ -261,29 +236,80 @@ footer div ul {
 
 .contact__form--container {
     display: flex;
-    padding: 2em;
+}
+
+.contact__form--container img {
+    min-width: 240px;
 }
 
 .contact__form {
     width: 100%;
     font-size: 1.3em;
-}
-
-.contact__form--container div {
-}
-
-.contact__form div {
-    display: flex;
-}
-
-.contact__form div > * {
-    background-color: var(--light-blue);
-    border: none;
-    border-bottom: 1.5px solid black;
+    padding: 2em;
 }
 
 .contact__form > * {
     background-color: var(--light-blue);
     border: none;
     width: 100%;
+    border-bottom: 1.5px solid black;
+    padding-top: .7em;
+    resize: none;
+}
+
+.send__form--button {
+    width: 30%;
+    margin: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--light-gold);
+}
+
+/*úpravy pro responzivitu stránek na větších monitorech*/
+
+@media screen and (min-width: 800px) {
+    .header__navbar__items {
+        display: flex;
+    }
+
+    .grid-menu {
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .main__text article p {
+        font-size: 1.5vw;
+    }
+
+    .knight-responsive {
+        width: 20vw;
+        display: block;
+        align-self: flex-end;
+    }
+
+    .grid-menu li p {
+        font-size: min(1.3vw, 40px);
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    .destination__ideas{
+        justify-content: center;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    h4 {
+        font-size: 1.8em;
+    }
+
+    footer div ul li {
+        font-size: 1.5em;
+    }
 }

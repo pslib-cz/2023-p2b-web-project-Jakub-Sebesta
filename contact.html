@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
     />
     <script src="./hamburger.js"></script>
-    <title>Galerie</title>
+    <title>Kontaktujkte nás</title>
   </head>
 
   <body>
@@ -42,14 +42,13 @@
     <main>
       <div class="contact__form--container">
         <img class="knight-responsive" src="./Images/Contact-knight.svg" alt="Kontaktovací rytíř">
-        <div class="contact__form">
+        <form class="contact__form">
           <input type="text" placeholder="Vaše jméno" required>
-          <div>
-            <input type="email" placeholder="Váš e-mail" required>
-            <input type="tel" placeholder="Vaše telefonní číslo (nepovinné)">
-          </div>
-          <textarea placeholder="Zpráva pro nás" required></textarea>
-        </div>
+          <input type="email" placeholder="Váš e-mail" required>
+          <input type="tel" placeholder="Vaše telefonní číslo (nepovinné)">
+          <textarea placeholder="Zpráva pro nás" rows="5" required></textarea>
+          <button type="submit" class="send__form--button"><h5>Odeslat</h5></button>
+        </form>
       </div>
     </main>
     <footer>
