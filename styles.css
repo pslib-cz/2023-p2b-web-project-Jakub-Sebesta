@@ -185,7 +185,7 @@ footer div img {
     max-height: 300px;
 }
 
-footer div header {
+footer div h4 {
     color: var(--light-gold);
     margin-bottom: 2vw;
 }
