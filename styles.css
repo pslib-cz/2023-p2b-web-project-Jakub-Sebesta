@@ -155,7 +155,6 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    flex-shrink: 0;
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
